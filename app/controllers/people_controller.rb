@@ -1,5 +1,5 @@
 class PeopleController < ApplicationController
   def index
-    @people = Person.all
+    @people = Person.ordered
   end
 end
