@@ -1,0 +1,14 @@
+<h1 class="text-3xl font-semibold text-gray-900 mb-8">Our team</h1>
+
+<ul role="list" class="divide-y divide-gray-200">
+  <% @people.each do |person| %>
+    <li class="flex py-4 items-center">
+      <%= inline_svg_tag "move.svg", class: "w-5 cursor-move flex-shrink-0 text-gray-400 mr-2", data: { sortable_handle: "" } %>
+      <%= image_tag person.avatar_path, alt: person.name, class: "h-10 w-10 rounded-full" %>
+      <div class="ml-3">
+        <p class="text-sm font-medium text-gray-900"><%= person.name %></p>
+        <p class="text-sm text-gray-500"><%= person.job_title %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
