@@ -15,6 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_193556) do
     t.string "name"
     t.string "job_title"
     t.string "avatar_path"
+    t.integer "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
