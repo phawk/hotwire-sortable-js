@@ -1,24 +1,21 @@
-# README
+# Hotwire sortable.js
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo app to show you how to drag and drop sort items with Hotwire.
 
-Things you may want to cover:
+## Creating the project
 
-* Ruby version
+This project was generated using the following command.
 
-* System dependencies
+```sh
+rails new hotsort --skip-jbuilder --skip-test --css=tailwind --javascript=esbuild
+```
 
-* Configuration
+## Running the project
 
-* Database creation
+To get set up, run the `bin/setup` script, to install dependencies, create the database, migrate and seed it with some sample data.
 
-* Database initialization
+Then run `bin/dev` and `open localhost:3000`.
 
-* How to run the test suite
+### License
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This code is licensed under the MIT License.
